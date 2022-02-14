@@ -1,0 +1,143 @@
+/* Fonts Begin*/
+@font-face{
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff'),
+    url('../fonts/Inter-Regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Medium.woff'),
+        url('../fonts/Inter-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url('../fonts/Inter-SemiBold.woff'),
+    url('../fonts/Inter-SemiBold.woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.woff'),
+    url('../fonts/Inter-Bold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Circular20 Cyr';
+    src: url('../fonts/Circular20SubCyr-Book.woff'),
+    url('../fonts/Circular20SubCyr-Book.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular20 Cyr';
+    src: url('../fonts/Circular20WebCyr-Medium.woff'),
+        url('../fonts/Circular20WebCyr-Medium.woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Fonts End*/
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Circular20 Cyr", sans-serif;
+    font-size: 16px;
+    color: #3B3B3B;
+    line-height: 100%;
+}
+
+h1, h2, h3, h4, p{
+    padding: 0;
+    margin: 0;
+}
+
+.section{
+    padding: 120px;
+}
+
+.container{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 110%;
+    letter-spacing: -3px;
+    margin-bottom: 80px;
+}
+
+.weather__block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.weather__box{
+    width: 32%;
+    padding: 40px 30px;
+    border-radius: 10px;
+    border: 1px solid #787878;
+    text-align: center;
+    background-size: cover;
+
+    position: relative;
+    color: #FFFFFF;
+
+    overflow: hidden;
+}
+
+.weather__box-bg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: invert(21%) sepia(0%) saturate(1%) hue-rotate(24deg) brightness(100%) contrast(94%);
+}
+
+
+.weather__box-title{
+    font-weight: 500;
+    font-size: 26px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    line-height: 110%;
+    margin-bottom: 40px;
+}
+
+.weather__box-number{
+    font-size: 54px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.weather__box-text{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+}
